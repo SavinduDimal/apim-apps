@@ -188,6 +188,7 @@ module.exports = function (env, argv) {
             new CleanWebpackPlugin({
                 cleanOnceBeforeBuildPatterns: ['./js/build/*','./css/build/*'],
                 dangerouslyAllowCleanPatternsOutsideProject: true,
+                dry: true,
             }),
             new HtmlWebpackPlugin({
                 inject: false,
